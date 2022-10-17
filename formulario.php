@@ -344,7 +344,7 @@ background: linear-gradient(0deg, rgba(255,255,255,1) 50%, rgba(253,187,45,1) 50
         <script class="iti-load-utils" async="" src="js/utils.js"></script>
 
         <!-- footer netymedia -->
-        <?php include "footer-netymedia.php"?>
+        <?php include "footer_2.php"?>
 </body>
 
 </html>
