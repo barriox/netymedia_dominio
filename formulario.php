@@ -99,7 +99,7 @@ $_POST = array();
     <link rel="alternate" type="application/rss+xml" title="Netymedia &raquo; RSS de los comentarios"
         href="http://netymedia.com/comments/feed/" />
     <link rel="shortcut icon" href="http://netymedia.com/wp-content/uploads/2017/08/favicon.ico" type="image/x-icon" />
-    <!-- For iPad Retina display -->
+    <!-- For iPad Retina display
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="">
 
     <link rel='stylesheet' id='layerslider-css'
@@ -119,10 +119,7 @@ $_POST = array();
         media='all' />
     <link rel='stylesheet' id='avada-stylesheet-css'
         href='http://netymedia.com/wp-content/themes/avada/style.css?ver=4.0.2' type='text/css' media='all' />
-    <!--[if lte IE 9]>
-  <link rel='stylesheet' id='avada-shortcodes-css'  href='http://netymedia.com/wp-content/themes/avada/shortcodes.css?ver=4.0.2' type='text/css' media='all' />
-  <![endif]-->
-    <link rel='stylesheet' id='fontawesome-css'
+     <link rel='stylesheet' id='fontawesome-css'
         href='http://netymedia.com/wp-content/themes/avada/assets/fonts/fontawesome/font-awesome.css?ver=4.0.2'
         type='text/css' media='all' />
     <link rel='stylesheet' id='avada-iLightbox-css'
@@ -131,7 +128,7 @@ $_POST = array();
         href='http://netymedia.com/wp-content/themes/avada/animations.css?ver=4.0.2' type='text/css' media='all' />
     <link rel='stylesheet' id='avada-dynamic-css-css'
         href='//netymedia.com/wp-content/uploads/avada-styles/avada-14.css?timestamp=1654186229&#038;ver=4.8.20'
-        type='text/css' media='all' />
+        type='text/css' media='all' />  -->
 
 
     <!-- Favicon -->
@@ -178,7 +175,10 @@ $_POST = array();
     <script src="vendor/modernizr/modernizr.min.js"></script>
 
     <style>
-    #tel {padding-left: 90px !important;}</style>
+    #tel {
+        padding-left: 90px !important;
+    }
+    </style>
 </head>
 
 <body>
@@ -196,155 +196,163 @@ $_POST = array();
 
 
 
-            <section class="section border-0 bg-quaternary p-relative" style="background: rgb(255,255,255);
-background: linear-gradient(0deg, rgba(255,255,255,1) 50%, rgba(253,187,45,1) 50%, rgba(153,0,0,1) 50%);">
-                <div class="container mt-5">
-                    <div class="row justify-content-end">
-                        <div class="col-lg-7">
+            <section class="section border-0 bg-quaternary p-relative" style="background-color: #990000 !important">
 
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-xl-7">
+                            <h2 class="my-5 ps-lg-5 ms-lg-4 p-5" id="dom">¡El nombre de dominio</br><span
+                                    id="bold"><?= $dominio ?></span><br>está a la venta!</h2>
                         </div>
-                        <div class="col-lg-11 bg-color-light border-radius" style="background: transparent !important;">
-                            <div class="">
-                                <div class="row justify-content-between">
-                                    <div class="row col-lg-6">
-                                        <h2 class="my-5 ps-lg-5 ms-lg-4" id="dom">¡El nombre de dominio</br><span id="bold"><?= $dominio ?></span><br>está a la venta!</h2>
-                                    </div>
-                                    <!-- formulario -->
-                                    <div class="col-lg-5">
+                        <!-- formulario -->
+                        <div class="col-md-6 col-xl-5 top-0 right-2">
 
-                                        <div class="card border-radius bg-color-light border-0 box-shadow-3">
-                                            <div class="card-body p-5 m-2 text-center">
-                                                <h4 class="card-title mb-2 text-6">Obtener este dominio</h4>
-                                                <p class="card-text">tendrá un precio de <b><?=$precio?>€</b> rellene el formulario para completar su compra</p>
+                            <div class="card border-radius bg-color-light border-0 box-shadow-3" id="ims">
+                                <div class="card-body p-5 m-2 text-center position-relative">
+                                    <h4 class="card-title mb-2 text-6">Obtener este dominio</h4>
+                                    <p class="card-text">tendrá un precio de <b><?=$precio?>€</b> rellene el formulario
+                                        para completar su compra</p>
 
-                                                <form class="contact-form" action="" method="POST">
-                                                    <div class="contact-form-success alert alert-success d-none mt-4">
-                                                        <strong>Success!</strong> Your message has been sent to us.
-                                                    </div>
+                                    <form class="contact-form" action="" method="POST">
+                                        <div class="contact-form-success alert alert-success d-none mt-4">
+                                            <strong>Success!</strong> Your message has been sent to us.
+                                        </div>
 
-                                                    <div class="contact-form-error alert alert-danger d-none mt-4">
-                                                        <strong><?= $errEmail?>!</strong> There was an error sending
-                                                        your message.
-                                                        <span class="mail-error-message text-1 d-block"></span>
-                                                    </div>
+                                        <div class="contact-form-error alert alert-danger d-none mt-4">
+                                            <strong><?= $errEmail?>!</strong> There was an error sending
+                                            your message.
+                                            <span class="mail-error-message text-1 d-block"></span>
+                                        </div>
 
-                                                    <div class="row">
-                                                        <div class="form-group col text-start">
-                                                            <input type="text" name="name" value="<?=$name?>"
-                                                                placeholder="Nombre *"
-                                                                data-msg-required="Por favor escribe tu nombre."
-                                                                maxlength="100" class="form-control text-2-5 p-3"
-                                                                required><span style="color:red"><?= $errName;?></span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="form-group col text-start">
-                                                            <div class="iti iti--allow-dropdown">
-                                                                <div class="iti__flag-container">
-                                                                    <div class="iti__selected-flag" role="combobox"
-                                                                        aria-controls="iti-0__country-listbox"
-                                                                        aria-owns="iti-0__country-listbox"
-                                                                        aria-expanded="false" tabindex="0"
-                                                                        title="United States: +1"
-                                                                        aria-activedescendant="iti-0__item-us-preferred">
-                                                                    </div>
-                                                                    <!-- La Lista (cuidadín quietorl) -->
-                                                                    <!-- La Lista (cuidadín quietorl)22222222222 -->
-                                                                    <?php include "telephones.php"?>
-                                                                </div>
-                                                                <input id="tel" name="tel" type="text"
-                                                                    autocomplete="off" data-intl-tel-input-id="0"
-                                                                    value="<?=$tel?>" class="form-control text-2-5 p-3"
-                                                                    required><br><span
-                                                                    style="color:red"><?= $errTel;?></span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="form-group col text-start">
-                                                            <input type="text" name="email" value="<?=$email?>"
-                                                                placeholder="E-mail *"
-                                                                data-msg-required="Por favor escribe tu correo electrónico."
-                                                                maxlength="100" class="form-control text-2-5 p-3"
-                                                                required><span style="color:red"><?= $errEmail;?></span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="form-group col text-start">
-                                                            <textarea class="form-control text-2-5 p-3" name="comment"
-                                                                value="<?=$comment?>"
-                                                                placeholder="Comentarios"></textarea>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="form-group col">
-                                                            <div class="d-grid gap-2">
-                                                                <input type="submit" name="submit" value="Enviar"
-                                                                    class="btn border-0 btn-tertiary bg-hover-primary text-color-hover-light text-color-primary text-3-5 p-3"
-                                                                    data-loading-text="Loading..."
-                                                                    style="padding-bottom: 3rem!important; margin:auto;">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col pt-4">
-                                                            <div class="hstack gap-3">
-                                                                <div class="ms-auto">
-                                                                    <i
-                                                                        class="icons icon-envelope text-4 p-relative top-5 me-2"></i>
-                                                                    <a href="mailto:you@domain.com"
-                                                                        class="text-decoration-none text-2 text-dark text-color-hover-primary ws-nowrap font-weight-semi-bold">info@netymedia.com</a>
-                                                                </div>
-                                                                <div class="vr"></div>
-                                                                <div class="me-auto">
-                                                                    <i
-                                                                        class="icons icon-phone text-4 p-relative top-5 me-2"></i>
-                                                                    <a href="tel:+1234567890"
-                                                                        class="text-decoration-none text-2 text-dark text-color-hover-primary ws-nowrap font-weight-semi-bold">976
-                                                                        405 978</a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                </form>
+                                        <div class="row">
+                                            <div class="form-group col text-start">
+                                                <input type="text" name="name" value="<?=$name?>" placeholder="Nombre *"
+                                                    data-msg-required="Por favor escribe tu nombre." maxlength="100"
+                                                    class="form-control text-2-5 p-3" required><span
+                                                    style="color:red"><?= $errName;?></span>
                                             </div>
                                         </div>
-                                    </div>
+                                        <div class="row">
+                                            <div class="form-group col text-start">
+                                                <div class="iti iti--allow-dropdown">
+                                                    <div class="iti__flag-container">
+                                                        <div class="iti__selected-flag" role="combobox"
+                                                            aria-controls="iti-0__country-listbox"
+                                                            aria-owns="iti-0__country-listbox" aria-expanded="false"
+                                                            tabindex="0" title="United States: +1"
+                                                            aria-activedescendant="iti-0__item-us-preferred">
+                                                        </div>
+                                                        <!-- telephone prefix -->
+                                                        <?php include "telephones.php"?>
+                                                    </div>
+                                                    <input id="tel" name="tel" type="text" autocomplete="off"
+                                                        data-intl-tel-input-id="0" value="<?=$tel?>"
+                                                        class="form-control text-2-5 p-3" required><br><span
+                                                        style="color:red"><?= $errTel;?></span>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="form-group col text-start">
+                                                <input type="text" name="email" value="<?=$email?>"
+                                                    placeholder="E-mail *"
+                                                    data-msg-required="Por favor escribe tu correo electrónico."
+                                                    maxlength="100" class="form-control text-2-5 p-3" required><span
+                                                    style="color:red"><?= $errEmail;?></span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="form-group col text-start">
+                                                <textarea class="form-control text-2-5 p-3" name="comment"
+                                                    value="<?=$comment?>" placeholder="Comentarios"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="form-group col">
+                                                <div class="d-grid gap-2">
+                                                    <input type="submit" name="submit" value="Enviar"
+                                                        class="btn border-0 btn-tertiary bg-hover-primary text-color-hover-light text-color-primary text-3-5 p-3"
+                                                        data-loading-text="Loading..."
+                                                        style="padding-bottom: 3rem!important; margin:auto;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                                    <div class="container-flex col-ms-12 col-lg-6 ms-auto">
+                                                        <i class="icons icon-envelope text-4 p-relative top-5 me-2"></i>
+                                                        <a href="mailto:you@domain.com"
+                                                            class="text-decoration-none text-2 text-dark text-color-hover-primary ws-nowrap font-weight-semi-bold">info@netymedia.com</a>
+                                                    </div>                                                    
+                                                    <div class="container-flex col-ms-12 col-lg-6 me-auto pt-lg-3">
+                                                        <i class="icons icon-phone text-4 p-relative top-5 me-2"></i>
+                                                        <a href="tel:+1234567890"
+                                                            class="text-decoration-none text-2 text-dark text-color-hover-primary ws-nowrap font-weight-semi-bold">976
+                                                            405 978  </a>
+                                                    </div>
+                                                
+                                            <!-- </div> -->
+                                        </div>
+                                    </form>
                                 </div>
-                                <div class="row col-lg-6" style="position: absolute; top: 65%;">
-                                    <!-- aqui las fotillos | preguntar por el responsive -->
-                                    <div class="container col-2" style="height: 180px; width: 140px;">
-                                        <img src="img/escudo.png" alt="" width="" height="">
-                                        <p>Protección al comprador</p>
-                                    </div>
-                                    <div class="container col-2" style="height: 180px; width: 140px;">
-                                        <img src="img/avion.png" alt="" width="" height="">
-                                        <p>Transferencias rápidas</p>
-                                    </div>
-                                    <div class="container col-2" style="height: 180px; width: 140px;">
-                                        <img src="img/tarjeta.png" alt="" width="" height="">
-                                        <p>Pagos sin inconvenientes</p>
-                                    </div>
-                                </div>
+                                <script>
+                                let imagenes = function() {
+                                    if (window.screen.width < 768) {
+                                        console.log(window.screen.width);
+                                        document.getElementById("ims").setAttribute("class",
+                                            "card border-radius bg-color-light border-0 box-shadow-3 position-static"
+                                            );
+                                    } else {
+                                        document.getElementById("ims").setAttribute("class",
+                                            "card border-radius bg-color-light border-0 box-shadow-3 position-absolute"
+                                            );
+                                    }
+                                }
+                                setInterval(function() {
+                                    imagenes();
+                                }, 100);
+                                </script>
                             </div>
                         </div>
                     </div>
                 </div>
+            </section>
+            <div class="container">
+                <div class="row" style="padding-top: 8rem; padding-bottom: 8rem">
+                    <div class="col-xl-7 col-md-6">
+                        <!-- aqui las fotillos | preguntar por el responsive -->
+                        <div class="row" id="ims">
+                            <div class="container col-4" style="height: 180px; width: 140px;">
+                                <img src="img/escudo.png" alt="" width="" height="">
+                                <p>Protección al comprador</p>
+                            </div>
+                            <div class="container col-4" style="height: 180px; width: 140px;">
+                                <img src="img/avion.png" alt="" width="" height="">
+                                <p>Transferencias rápidas</p>
+                            </div>
+                            <div class="container col-4" style="height: 180px; width: 140px;">
+                                <img src="img/tarjeta.png" alt="" width="" height="">
+                                <p>Pagos sin inconvenientes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </section>
         </div>
-        </section>
-        </div>
-    </main>    
-        <!-- scripts telephone dropdown -->
-        <script src="js/intlTelInput.js"></script>
-        <script>
-        var input = document.querySelector("#tel");
-        window.intlTelInput(input, {
-            utilsScript: "js/utils.js",
-        });
-        </script>
-        <script class="iti-load-utils" async="" src="js/utils.js"></script>
+    </main>
+    <!-- scripts telephone dropdown -->
+    <script src="js/intlTelInput.js"></script>
+    <script>
+    var input = document.querySelector("#tel");
+    window.intlTelInput(input, {
+        utilsScript: "js/utils.js",
+    });
+    </script>
+    <script class="iti-load-utils" async="" src="js/utils.js"></script>
 
-        <!-- footer netymedia -->
-        <?php include "footer_2.php"?>
+    <!-- footer netymedia -->
+    <?php include "footer_2.php"?>
 </body>
 
 </html>

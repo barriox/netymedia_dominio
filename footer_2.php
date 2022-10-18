@@ -4,28 +4,25 @@
     <!-- Section: Social media -->
     <section class="mb-4">
       <!-- logo -->
-      <a href=""><img class="img-fluid" src="img/logo_footer.png" alt="logo" height="100" width="100"></a>
-
-    
+      
+      <div class="caption">
+      <a href=""><img class="img-fluid me-5" src="img/logo_footer.png" alt="logo" height="100" width="100"></a>
       <!-- link 1 -->
-      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-        >política de privacidad</i
-      ></a>
-
+      <a class="class=" link-primary ms-2 fs-6" href="#!" role="button"
+        >Política de privacidad</a>
+<span class="divider">|</span>
       <!-- link 2 -->
-      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-        >condiciones de uso</i
-      ></a>
-
+      <a class="class=" link-primary ms-2" href="#!" role="button"
+        >Condiciones de uso</a>
+        <span class="divider">|</span>
       <!-- link 3 -->
-      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-        >aviso legal</i
-      ></a>
-
+      <a class="class=" link-primary ms-2" href="#!" role="button"
+        >Aviso legal</a>
+        <span class="divider">|</span>
       <!-- link 4 -->
-      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-        >mapa del sitio</i
-      ></a>
+      <a class="class=" link-primary ms-2" href="#!" role="button"
+        >Mapa del sitio</a>
+        </div>  
     </section>
     <!-- Section: Social media -->
   </div>
