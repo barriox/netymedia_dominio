@@ -1,0 +1,21 @@
+#tel {
+    padding-left: 90px !important;
+}
+
+.nety-bg{
+    background-color: #990000 !important;
+}
+.error{
+    color: red;
+}
+#sendbutton{
+    padding-bottom: 3rem!important;
+    margin:auto;
+}
+#img-container{
+    padding-top: 8rem; 
+    padding-bottom: 8rem;
+}
+.domainname{
+    height: 15rem;
+}

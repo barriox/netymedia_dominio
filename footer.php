@@ -8,19 +8,19 @@
       <div class="caption">
       <a href=""><img class="img-fluid me-5" src="img/logo_footer.png" alt="logo" height="100" width="100"></a>
       <!-- link 1 -->
-      <a class="class=" link-primary ms-2 fs-6" href="#!" role="button"
+      <a href="#!" role="button"
         >Política de privacidad</a>
-<span class="divider">|</span>
+      <span class="divider">|</span>
       <!-- link 2 -->
-      <a class="class=" link-primary ms-2" href="#!" role="button"
+      <a href="#!" role="button"
         >Condiciones de uso</a>
         <span class="divider">|</span>
       <!-- link 3 -->
-      <a class="class=" link-primary ms-2" href="#!" role="button"
+      <a href="#!" role="button"
         >Aviso legal</a>
         <span class="divider">|</span>
       <!-- link 4 -->
-      <a class="class=" link-primary ms-2" href="#!" role="button"
+      <a href="#!" role="button"
         >Mapa del sitio</a>
         </div>  
     </section>
