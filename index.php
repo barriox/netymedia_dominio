@@ -256,6 +256,19 @@
 
     <!-- footer netymedia -->
     <?php include "footer.php"?>
+    <!-- google recaptchaV3 -->
+    <script src="https://www.google.com/recaptcha/api.js?render=reCAPTCHA_site_key"></script>
+    <script>
+      function onClick(e) {
+        e.preventDefault();
+        grecaptcha.ready(function() {
+          grecaptcha.execute('reCAPTCHA_site_key', {action: 'submit'}).then(function(token) {
+              // Add your logic to submit to your backend server here.
+              document.getElementById('g-recaptcha-response').value = token;
+          });
+        });
+      }
+  </script>
 </body>
 
 </html>
