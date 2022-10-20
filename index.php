@@ -117,7 +117,8 @@
 
                                         <div class="row">
                                             <div class="form-group col text-start">
-                                                <input type="text" name="name" value="<?=$name?>" placeholder="Nombre *"
+                                                <label for="name" class="d-none">nombre</label>
+                                                <input id="name" type="text" name="name" value="<?=$name?>" placeholder="Nombre *"
                                                     data-msg-required="Por favor escribe tu nombre." maxlength="100"
                                                     class="form-control text-2-5 p-3" required>
                                                 <span class="error"><?= $errName;?></span>
