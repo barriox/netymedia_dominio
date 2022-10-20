@@ -137,6 +137,7 @@
                                                         <!-- telephone prefix -->
                                                         <?php include "telephones.php"?>
                                                     </div>
+                                                    <label for="tel" class="d-none">telefono</label>
                                                     <input id="tel" name="tel" type="text" autocomplete="off"
                                                         data-intl-tel-input-id="0" value="<?=$tel?>"
                                                         class="form-control text-2-5 p-3" required><br><span
@@ -147,6 +148,7 @@
                                         </div>
                                         <div class="row">
                                             <div class="form-group col text-start">
+                                            <label for="email" class="d-none">e-mail</label>
                                                 <input type="text" name="email" value="<?=$email?>"
                                                     placeholder="E-mail *"
                                                     data-msg-required="Por favor escribe tu correo electrónico."
@@ -156,7 +158,8 @@
                                         </div>
                                         <div class="row">
                                             <div class="form-group col text-start">
-                                                <textarea class="form-control text-2-5 p-3" name="comment"
+                                            <label for="comment" class="d-none">comentario</label>
+                                                <textarea id="comment" class="form-control text-2-5 p-3" name="comment"
                                                     value="<?=$comment?>" placeholder="Comentarios"></textarea>
                                             </div>
                                         </div>
