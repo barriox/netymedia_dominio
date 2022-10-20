@@ -1,19 +1,18 @@
 <?php
-
-if((isset($_GET["dominio"]) && isset($_GET["precio"])) && (!empty($_GET["dominio"]) && !empty($_GET["precio"]))){
+if(isset($_GET["dominio"]) && !empty($_GET["dominio"])){
     $dominio=$_GET["dominio"];
-    $precio=$_GET["precio"];
+    include_once "vars.php";
 
-    $name=$tel=$email=$comment="";
-    $errName=$errEmail=$errTel="";
     function test_input($datos) {
       $datos = trim($datos);
       $datos = stripslashes($datos);
       $datos = htmlspecialchars($datos);
       return $datos;
     }
-
     if (isset($_POST["submit"])) {
+      $name=$tel=$email=$comment="";
+      $errName=$errEmail=$errTel="";
+
       if (empty($_POST["name"])) {
         $errName = "Es obligatorio aportar un nombre";
       } else {
@@ -50,7 +49,6 @@ if((isset($_GET["dominio"]) && isset($_GET["precio"])) && (!empty($_GET["dominio
       }
 
     }
-
 }else{
   header('Location: http://www.netymedia.com/');
 }
