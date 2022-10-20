@@ -9,10 +9,9 @@ if(isset($_GET["dominio"]) && !empty($_GET["dominio"])){
       $datos = htmlspecialchars($datos);
       return $datos;
     }
+    $name=$tel=$email=$comment="";
+    $errName=$errEmail=$errTel="";
     if (isset($_POST["submit"])) {
-      $name=$tel=$email=$comment="";
-      $errName=$errEmail=$errTel="";
-
       if (empty($_POST["name"])) {
         $errName = "Es obligatorio aportar un nombre";
       } else {
