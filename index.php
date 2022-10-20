@@ -159,6 +159,15 @@
                                                     value="<?=$comment?>" placeholder="Comentarios"></textarea>
                                             </div>
                                         </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value=""
+                                                id="flexCheckDefault" required>
+                                            <label class="form-check-label text-start ps-2" for="flexCheckDefault">
+                                                acepto las
+                                                <a target="_blank" href="/es-es/terms_of_use">condiciones de uso</a>
+                                                y condiciones
+                                            </label>
+                                        </div>
                                         <div class="row">
                                             <div class="form-group col">
                                                 <div class="d-grid gap-2">
